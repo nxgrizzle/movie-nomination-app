@@ -9,10 +9,10 @@
   },
 
   "production": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "shoppies_production",
-    "host": "localhost",
+    "username": "elwvjtvebxduau",
+    "password": "8f48bc54b5bffea86004b11b9666dbd159343841faf15ea90e1d31e7b34e4300",
+    "database": "ddjt2o9oioo6qc",
+    "host": "ec2-54-86-224-85.compute-1.amazonaws.com",
     "dialect": "postgres",
     "use_env_variable": "DATABASE_URL",
     "dialectOptions": {
