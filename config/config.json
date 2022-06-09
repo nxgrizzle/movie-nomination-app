@@ -5,14 +5,20 @@
     "database": "shoppies_development",
     "host": "localhost",
     "dialect": "postgres",
-    "operatorAliases": false
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
 
   "production": {
-    "username": "elwvjtvebxduau",
-    "password": "8f48bc54b5bffea86004b11b9666dbd159343841faf15ea90e1d31e7b34e4300",
-    "database": "ddjt2o9oioo6qc",
-    "host": "ec2-54-86-224-85.compute-1.amazonaws.com",
+    "username": "postgres",
+    "password": "postgres",
+    "database": "shoppies_production",
+    "host": "localhost",
     "dialect": "postgres",
     "use_env_variable": "DATABASE_URL",
     "dialectOptions": {
