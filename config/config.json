@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "shoppies_development",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorAliases": false
+  },
+
+  "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "shoppies_production",
+    "host": "localhost",
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
