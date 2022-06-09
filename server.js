@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const publicPath = path.join(__dirname, "build");
-require("dotenv").config({ path: "../.env" });
+require("dotenv").config({ path: "./.env" });
 const port = process.env.PORT || 3000;
 app.use(express.static(publicPath));
 app.use(express.static("public"));
