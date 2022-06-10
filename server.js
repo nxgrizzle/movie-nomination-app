@@ -14,11 +14,16 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.sendFile(path.join(publicPath, "index.html"));
 });
+app.get("/view/:slug", (req, res) => {
+  res.sendFile(path.join(publicPath, "index.html"));
+});
 app.use(cors());
 const db = require("./models");
+/*
 db.sequelize.sync({ force: true }).then(() => {
   console.log("Drop and re-sync db.");
 });
+*/
 require("./routes/users.routes.js")(app);
 require("./routes/movies.routes.js")(app);
 
