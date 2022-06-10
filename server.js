@@ -19,11 +19,11 @@ app.get("/view/:slug", (req, res) => {
 });
 app.use(cors());
 const db = require("./models");
-/*
+
 db.sequelize.sync({ force: true }).then(() => {
   console.log("Drop and re-sync db.");
 });
-*/
+
 require("./routes/users.routes.js")(app);
 require("./routes/movies.routes.js")(app);
 
